@@ -8,7 +8,12 @@ requirejs.config({
 		"Launcher":"app/classes/Launcher",
 		"Display":"app/classes/display/Display",
 		"Game":"app/classes/Game",
-		"ImageLoader":"app/classes/graphics/ImageLoader"
+		"ImageLoader":"app/classes/graphics/ImageLoader",
+		"State":"app/classes/states/State",
+		"GameState":"app/classes/states/GameState",
+		"Handler":"app/classes/Handler",
+		"KeyHandler":"app/classes/input/KeyHandler",
+		"Entity":"app/classes/entities/Entity"
 	}
 });
 

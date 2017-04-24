@@ -8,6 +8,18 @@ define(['Jquery','Class'],function($,Class){
 			width = _width;
 			height = _height;
 			createDisplay();
+		},
+		getWidth:function(){
+			return width;
+		},
+		getHeight:function(){
+			return height;
+		},
+		getTitle:function(){
+			return title;
+		},
+		getGraphics:function(){
+			return graphics;
 		}
 	});
 
@@ -22,20 +34,6 @@ define(['Jquery','Class'],function($,Class){
 		document.body.appendChild(canvas);
 
 		graphics = canvas.getContext("2d");
-	}
-
-	//Getters
-	Display.prototype.getWidth = function(){
-		return width;
-	}
-	Display.prototype.getHeight = function(){
-		return height;
-	}
-	Display.prototype.getTitle = function(){
-		return title;
-	}
-	Display.prototype.getGraphics = function(){
-		return graphics;
 	}
 
 	return Display;
